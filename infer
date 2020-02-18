@@ -1,0 +1,14 @@
+#!/bin/sh
+# Usage: infer [arg0 [arg1 ...]]
+# Set up container and forward args to Infer
+
+# NOTE: Requires $PWD to be under $HOME
+
+docker run -it \
+    --env LINUX_USER="$(id -un)" \
+    --env LINUX_UID="$(id -u)" \
+    --env LINUX_GROUP="$(id -gn)" \
+    --env LINUX_GID="$(id -g)" \
+    --env LINUX_DIR="$PWD" \
+    --mount "src=$HOME,target=$HOME,type=bind" \
+    telosalliance/ubuntu-20.04-infer:latest infer "$@"
