@@ -5,7 +5,7 @@ Docker container for Facebook's Infer, based on our own Ubuntu 20.04 build conta
 Links:
 
 - [Base Image (DockerHub)](https://hub.docker.com/repository/docker/telosalliance/ubuntu-20.04)
-- [This Image (DockerHub)](https://hub.docker.com/repository/docker/telosalliance/infer)
+- [This Image (DockerHub)](https://hub.docker.com/repository/docker/telosalliance/ubuntu-20.04-infer)
 
 ## Environment Variables
 
