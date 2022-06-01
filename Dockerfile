@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.3-labs
-FROM telosalliance/ubuntu-20.04:2021-10-08
+FROM telosalliance/ubuntu-20.04:2022-05-31
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV INFER_VERSION 1.1.0
